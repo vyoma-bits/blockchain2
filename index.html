@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Showcase</title>
+    <title>Bitscom Express</title>
     
 </head>
 <body>
 
 <header>
-    <h1>Product Showcase</h1>
+    <h1>Bitscom Express</h1>
     <button id="connect-button">Connect Wallet</button>
     <input type="text" id="search-bar" placeholder="Search...">
 </header>
@@ -30,7 +30,7 @@
       <h3>Motorola G 54</h3>
       <p>Made by Motorola</p>
   </div>
-    <!-- Add more products as needed -->
+   
 </div>
 
 <div id="modal">
@@ -42,6 +42,7 @@
         <button onclick="buyProduct()">Buy</button>
     </div>
 </div>
+<footer>Made with &#10084; by Vyoma</footer>
 
 <script>
     function openModal(title, image,TITLE2) {
@@ -57,11 +58,11 @@
     }
 
     function buyProduct() {
-        // Implement buy functionality here
+       
         alert('Buy functionality not implemented for this task.');
     }
 
-    // Extra points: Search functionality
+   
     document.getElementById('search-bar').addEventListener('input', function () {
         let searchTerm = this.value.toLowerCase();
         let products = document.getElementsByClassName('product');
@@ -77,6 +78,38 @@
     });
 </script>
 <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4c3; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0em; 
+        }
+
+        footer {
+            background-color: #f2f2f2; 
+            color: #333;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+     
+        #product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+
   body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -84,12 +117,7 @@
       background-color: #f2f2f2;
   }
 
-  header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em;
-  }
+
 
   #product-container {
       display: flex;
